@@ -1,0 +1,59 @@
+.configContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.kickButton {
+    border: none;
+    background-color: #bdbdbd;
+    padding: 4px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.leaveButton {
+    border: none;
+    background-color: #fd4040;
+    color: white;
+    padding: 16px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.boardForm {
+    display: flex;
+    gap: 32px;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.inputGroup input {
+    padding: 8px;
+}
+
+.startPlacingButton {
+    margin-top: 16px;
+    border: none;
+    background-color: #35be3a;
+    color: white;
+    padding: 16px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.backButton {margin-top: 16px;
+    border: none;
+    background-color: #bdbdbd;
+    color: white;
+    padding: 16px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+}

@@ -1,0 +1,11 @@
+.shipContainer {
+    margin-top: 4px;
+    display: flex;
+    gap: 2px;
+}
+
+.shipSegment {
+    width: 50px;
+    height: 50px;
+    border-radius: 20%;
+}

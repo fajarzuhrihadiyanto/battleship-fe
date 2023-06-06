@@ -1,0 +1,11 @@
+.roomContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: end;
+}
+
+.roomContainer > div {
+    width: 500%;
+}
