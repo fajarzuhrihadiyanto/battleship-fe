@@ -23,7 +23,7 @@ const useBoardStoreBase = create(devtools((set, get) => ({
   ships: {
     destroyer: {
       size: 2,
-      color: '#000'
+      color: '#888'
     },
     submarine: {
       size: 3,

@@ -9,9 +9,6 @@ const Grid = ({row, col}) => {
   const fill = useBoardStore.useFill()
   const ships = useBoardStore.useShips()
 
-  console.log(boardMap)
-  console.log(ships)
-
   const onContentDragEnter = e => {
     const color = draggedElement.getAttribute('data-color')
     const direction = draggedElement.getAttribute('data-direction')

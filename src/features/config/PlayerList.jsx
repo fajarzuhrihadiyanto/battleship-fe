@@ -23,7 +23,7 @@ const PlayerList = () => {
       <h1>Players</h1>
       <ul>
         {roomConfig.players.map(user => (
-          <li key={user.id}>{user.username} {socket.id === user.id ? <b>(You)</b> : <button className={styles.kickButton} onClick={onKick(user.id)}>kick</button>} {user.ready && <>- ready</>}</li>
+          <li key={user.id}>{user.username} {socket.id === user.id && <b>(You)</b>} {user.ready && <>- ready</>}</li>
         ))}
       </ul>
       <button className={styles.leaveButton} onClick={onLeave}>Leave</button>

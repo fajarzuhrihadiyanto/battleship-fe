@@ -55,12 +55,11 @@ const Config = () => {
 
       <PlayerList/>
 
-      {socket.id === roomConfig.creator && <BoardConfig/>}
+      {appState === 'room' && socket.id === roomConfig.creator && <BoardConfig/>}
 
       {appState === 'room' && socket.id === roomConfig.creator && <button className={styles.startPlacingButton} onClick={onStartPlacing}>Start Placing</button>}
       {appState === 'placement' &&  (!ready
-        ? <button className={styles.startPlacingButton} onClick={onReady}>Ready</button>
-        : <button className={styles.backButton} onClick={onCancel}>Cancel</button>)}
+        && <button className={styles.startPlacingButton} onClick={onReady}>Ready</button>)}
     </div>
   )
 
